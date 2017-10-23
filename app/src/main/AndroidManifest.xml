@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.opet.tds.InterDisciplinar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/login"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="br.com.opet.tds.InterDisciplinar.FirebaseLogin.TelaPrincipalActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="AppInterDisciplinar" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".Others.InsertClubeActivity" />
+        <activity
+            android:name=".Others.ListClubeActivity"
+            android:label="@string/title_activity_list_clube"
+            android:parentActivityName=".Others.InsertClubeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.opet.tds.InterDisciplinar.Others.InsertClubeActivity" />
+        </activity>
+        <activity android:name=".CRUD.ConsultaActivity" />
+        <activity android:name=".CRUD.CadastrarActivity" />
+        <activity android:name=".CRUD.AlterarActivity" />
+        <activity android:name=".CRUD.MenuActivity" />
+        <activity android:name=".API.APIActivity" />
+        <activity android:name=".CRUD.ConsultaLocal" />
+        <activity android:name=".FirebaseLogin.LoginActivity" />
+        <activity android:name=".FirebaseLogin.CadastroLoginActivity"></activity>
+    </application>
+
+</manifest>

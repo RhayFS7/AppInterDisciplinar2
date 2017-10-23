@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "491646657451",
+    "firebase_url": "https://appinterdisciplinar.firebaseio.com",
+    "project_id": "appinterdisciplinar",
+    "storage_bucket": "appinterdisciplinar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491646657451:android:8faf8560c88e44d2",
+        "android_client_info": {
+          "package_name": "br.com.opet.tds.InterDisciplinar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491646657451-k4mnbl1mnmb85cucf0cpcq16d0gc2b3o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.opet.tds.InterDisciplinar",
+            "certificate_hash": "aeb4edb4d6fbde7c4a814ca4c96cffdc8b855349"
+          }
+        },
+        {
+          "client_id": "491646657451-tgvqdrs85gm1utqhpm41qg750r6b3dbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcYQ1nDh1UGUoTUIxUODd89KY3cZYFRcE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491646657451-tgvqdrs85gm1utqhpm41qg750r6b3dbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

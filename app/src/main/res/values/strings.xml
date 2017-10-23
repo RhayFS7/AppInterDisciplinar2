@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">App InterDisciplinar</string>
+    <string name="title_activity_list_clube">Lista de Problemas</string>
+    <string name="hintNomeClube">Problema</string>
+    <string name="hintCidadeClube">Problema</string>
+    <string name="hintAnoClube">Problema</string>
+    <string name="facebook_app_id">771628863016038</string>
+    <string name="fb_login_protocol_scheme">fb771628863016038</string>
+
+</resources>
