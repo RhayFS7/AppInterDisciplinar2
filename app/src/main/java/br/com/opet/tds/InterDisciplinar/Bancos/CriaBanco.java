@@ -32,11 +32,11 @@ public class CriaBanco extends SQLiteOpenHelper {
                 + ID + " integer primary key autoincrement,"
                 + PROBLEMA + " varchar2(100),"
                 + SALA + " integer,"
-                + BLOCO + "varchar2(100),"
-                + DATA1 + "varchar2(100),"
-                + DATA2 + "varchar2(100),"
-                + SETOR + "varchar2(100),"
-                + USUARIO + "varchar2(100)"
+                + BLOCO + " varchar2(100),"
+                + DATA1 + " varchar2(100),"
+                + DATA2 + " varchar2(100),"
+                + SETOR + " varchar2(100),"
+                + USUARIO + " varchar2(100) "
                 +");";
         db.execSQL(sql);
     }

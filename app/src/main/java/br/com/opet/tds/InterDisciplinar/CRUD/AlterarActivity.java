@@ -37,13 +37,13 @@ public class AlterarActivity extends Activity {
 
         crud = new BancoController(getBaseContext());
 
-        problema = (EditText)findViewById(R.id.editText3);
-        sala = (EditText)findViewById(R.id.editText4);
-        bloco = (EditText)findViewById(R.id.editText9);
-        data1 = (EditText)findViewById(R.id.editText8);
-        data2 = (EditText)findViewById(R.id.editText5);
-        setor = (EditText)findViewById(R.id.editText6);
-        usuario = (EditText)findViewById(R.id.editText7);
+        problema = (EditText)findViewById(R.id.editText8);
+        sala = (EditText)findViewById(R.id.editText9);
+        bloco = (EditText)findViewById(R.id.editText10);
+        data1 = (EditText)findViewById(R.id.editText11);
+        data2 = (EditText)findViewById(R.id.editText12);
+        setor = (EditText)findViewById(R.id.editText13);
+        usuario = (EditText)findViewById(R.id.editText14);
 
 
         alterar = (Button)findViewById(R.id.button4);
