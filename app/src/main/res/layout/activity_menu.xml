@@ -13,20 +13,19 @@
     tools:context="br.com.opet.tds.InterDisciplinar.CRUD.MenuActivity">
 
     <Button
-        android:text="Cadastrar problema"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/inserirButton"
-        android:textSize="24sp"
-        android:textAllCaps="false"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default"
         android:elevation="12dp"
         android:onClick="inserir"
-        style="@android:style/Widget.Button"
-        android:background="@android:drawable/btn_default"
+        android:text="Cadastrar manutenção"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
         android:layout_above="@+id/button2"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="33dp"
-        android:textStyle="normal|bold" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:text="Menu"
@@ -43,33 +42,45 @@
         android:fontFamily="cursive" />
 
     <Button
-        android:text="Problemas Unidade Centro"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
         android:id="@+id/button3"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:elevation="12dp"
-        android:textSize="24sp"
         android:onClick="listar"
-        android:textStyle="normal|bold" />
+        android:text="Estoque Unidade"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/button4"
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="Problemas Unidade Cabral"
-        android:layout_width="match_parent"
+        android:id="@+id/button2"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textAllCaps="false"
         android:elevation="12dp"
         android:onClick="listar2"
-        style="@android:style/Widget.Button"
-        android:layout_marginBottom="34dp"
-        android:id="@+id/button2"
+        android:text="Historico de Manutenções"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
         android:layout_above="@+id/button3"
-        android:layout_alignParentStart="true"
-        android:textStyle="normal|bold" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="12dp"
+        android:text="Localização Galpão"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp" />
 
     <ImageView
         android:id="@+id/imageView"
