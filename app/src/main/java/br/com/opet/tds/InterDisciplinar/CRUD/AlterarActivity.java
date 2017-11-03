@@ -17,6 +17,11 @@ public class AlterarActivity extends Activity {
 
     EditText problema;
     EditText sala;
+    EditText bloco;
+    EditText data1;
+    EditText data2;
+    EditText setor;
+    EditText usuario;
     Button alterar;
     Button deletar;
     Cursor cursor;
@@ -34,6 +39,11 @@ public class AlterarActivity extends Activity {
 
         problema = (EditText)findViewById(R.id.editText3);
         sala = (EditText)findViewById(R.id.editText4);
+        bloco = (EditText)findViewById(R.id.editText9);
+        data1 = (EditText)findViewById(R.id.editText8);
+        data2 = (EditText)findViewById(R.id.editText5);
+        setor = (EditText)findViewById(R.id.editText6);
+        usuario = (EditText)findViewById(R.id.editText7);
 
 
         alterar = (Button)findViewById(R.id.button4);
@@ -41,6 +51,11 @@ public class AlterarActivity extends Activity {
         cursor = crud.carregaDadoById(Integer.parseInt(codigo));
         problema.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.PROBLEMA)));
         sala.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.SALA)));
+        bloco.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.BLOCO)));
+        data1.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.DATA1)));
+        data2.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.DATA2)));
+        setor.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.SETOR)));
+        usuario.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.USUARIO)));
 
         alterar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +64,11 @@ public class AlterarActivity extends Activity {
                 problemaObj.set_ID(Integer.parseInt(codigo));
                 problemaObj.setProblema(problema.getText().toString());
                 problemaObj.setSala(Integer.parseInt(sala.getText().toString()));
+                problemaObj.setBloco(bloco.getText().toString());
+                problemaObj.setData1(data1.getText().toString());
+                problemaObj.setData2(data2.getText().toString());
+                problemaObj.setSetor(setor.getText().toString());
+                problemaObj.setUsuario(usuario.getText().toString());
                 crud.alteraRegistro(problemaObj);
                 Intent intent = new Intent(AlterarActivity.this,ConsultaActivity.class);
                 startActivity(intent);

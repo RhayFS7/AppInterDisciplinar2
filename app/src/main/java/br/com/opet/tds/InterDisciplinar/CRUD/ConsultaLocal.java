@@ -28,8 +28,8 @@ public class ConsultaLocal extends Activity {
         BancoController crud = new BancoController(getBaseContext());
         final Cursor cursor = crud.carregaDados();
 
-        String[] nomeCampos = new String[] {CriaBanco.ID, CriaBanco.PROBLEMA, CriaBanco.SALA};
-        int[] idViews = new int[] {R.id.idProblema, R.id.nomeProblema, R.id.numeroSala};
+        String[] nomeCampos = new String[] {CriaBanco.ID, CriaBanco.PROBLEMA, CriaBanco.SALA, CriaBanco.BLOCO, CriaBanco.DATA1, CriaBanco.DATA2, CriaBanco.SETOR, CriaBanco.USUARIO};
+        int[] idViews = new int[] {R.id.idProblema, R.id.nomeProblema, R.id.numeroSala, R.id.nomeBloco, R.id.nomeData1, R.id.nomeData2, R.id.nomeSetor, R.id.nomeUsuario};
 
         SimpleCursorAdapter adaptador = new SimpleCursorAdapter(getBaseContext(),
                 R.layout.activity_problemas,cursor,nomeCampos,idViews, 0);

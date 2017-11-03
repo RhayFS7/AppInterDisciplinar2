@@ -15,6 +15,11 @@ public class CriaBanco extends SQLiteOpenHelper {
     public static final String ID = "_id";
     public static final String PROBLEMA = "problema";
     public static final String SALA = "sala";
+    public static final String BLOCO = "bloco";
+    public static final String DATA1 = "data1";
+    public static final String DATA2 = "data2";
+    public static final String SETOR = "setor";
+    public static final String USUARIO = "usuario";
     public static final int VERSAO = 2;
 
     public CriaBanco(Context context){
@@ -26,7 +31,12 @@ public class CriaBanco extends SQLiteOpenHelper {
         String sql = "CREATE TABLE "+TABELA+"("
                 + ID + " integer primary key autoincrement,"
                 + PROBLEMA + " varchar2(100),"
-                + SALA + " integer"
+                + SALA + " integer,"
+                + BLOCO + "varchar2(100),"
+                + DATA1 + "varchar2(100),"
+                + DATA2 + "varchar2(100),"
+                + SETOR + "varchar2(100),"
+                + USUARIO + "varchar2(100)"
                 +");";
         db.execSQL(sql);
     }

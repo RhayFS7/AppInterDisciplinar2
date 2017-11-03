@@ -42,6 +42,25 @@
         android:layout_marginTop="0dp" />
 
     <TextView
+        android:text="BLOCO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textSize="24sp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Bloco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeBloco"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="0dp" />
+
+    <TextView
         android:text="PROBLEMA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,12 +71,98 @@
         android:fontFamily="serif" />
 
     <TextView
-android:text="Problema"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:id="@+id/nomeProblema"
-android:textStyle="normal|bold"
-android:textSize="24sp"
+        android:text="Problema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeProblema"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
         android:textAlignment="viewStart"
         android:paddingTop="0dp" />
+
+    <TextView
+        android:text="DATA DO PEDIDO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:textSize="24sp"
+        android:layout_marginTop="40dp"
+        android:textStyle="normal|bold"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:text="Data1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeData1"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:textAlignment="viewStart"
+        android:paddingTop="0dp" />
+
+    <TextView
+        android:text="DATA P/ CONCLUSÃO DA MANUTENÇÃO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:textSize="24sp"
+        android:layout_marginTop="40dp"
+        android:textStyle="normal|bold"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:text="Data2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeData2"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:textAlignment="viewStart"
+        android:paddingTop="0dp" />
+
+    <TextView
+        android:text="SETOR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textSize="24sp"
+        android:layout_marginTop="40dp"
+        android:textStyle="normal|bold"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:text="Setor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeSetor"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:textAlignment="viewStart"
+        android:paddingTop="0dp" />
+
+    <TextView
+        android:text="USUARIO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:textSize="24sp"
+        android:layout_marginTop="40dp"
+        android:textStyle="normal|bold"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:text="Usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeUsuario"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:textAlignment="viewStart"
+        android:paddingTop="0dp" />
+
+
+
+
+
+
 </LinearLayout>

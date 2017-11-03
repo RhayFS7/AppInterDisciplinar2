@@ -27,20 +27,26 @@ public class BancoController {
         valores = new ContentValues();
         valores.put(CriaBanco.PROBLEMA, problema.getProblema());
         valores.put(CriaBanco.SALA, problema.getSala());
+        valores.put(CriaBanco.BLOCO, problema.getBloco());
+        valores.put(CriaBanco.DATA1, problema.getData1());
+        valores.put(CriaBanco.DATA2, problema.getData2());
+        valores.put(CriaBanco.SETOR, problema.getSetor());
+        valores.put(CriaBanco.USUARIO, problema.getUsuario());
+
 
         resultado = db.insert(CriaBanco.TABELA, null, valores);
         db.close();
 
         if (resultado ==-1)
-            return "Erro ao inserir registro";
+            return "Erro ao inserir Manutenção";
         else
-            return "Registro Inserido com sucesso";
+            return "Manutenção inserida com sucesso";
 
     }
 
     public Cursor carregaDados(){
         Cursor cursor;
-        String[] campos =  {banco.ID,banco.PROBLEMA, banco.SALA};
+        String[] campos =  {banco.ID,banco.PROBLEMA, banco.SALA, banco.BLOCO, banco.DATA1, banco.DATA2, banco.SETOR, banco.USUARIO};
         db = banco.getReadableDatabase();
 
         cursor = db.query(banco.TABELA, campos, null, null, null, null, null, null);
@@ -54,7 +60,7 @@ public class BancoController {
 
     public Cursor carregaDadoById(int id){
         Cursor cursor;
-        String[] campos =  {banco.ID,banco.PROBLEMA,banco.SALA};
+        String[] campos =  {banco.ID,banco.PROBLEMA,banco.SALA, banco.BLOCO, banco.DATA1, banco.DATA2, banco.SETOR, banco.USUARIO};
         String where = CriaBanco.ID + "=" + id;
         db = banco.getReadableDatabase();
         cursor = db.query(CriaBanco.TABELA,campos,where, null, null, null, null, null);
@@ -77,6 +83,11 @@ public class BancoController {
         valores = new ContentValues();
         valores.put(CriaBanco.PROBLEMA, problema.getProblema());
         valores.put(CriaBanco.SALA, problema.getSala());
+        valores.put(CriaBanco.BLOCO, problema.getBloco());
+        valores.put(CriaBanco.DATA1, problema.getData1());
+        valores.put(CriaBanco.DATA2, problema.getData2());
+        valores.put(CriaBanco.SETOR, problema.getSetor());
+        valores.put(CriaBanco.USUARIO, problema.getUsuario());
 
         db.update(CriaBanco.TABELA,valores,where,null);
         db.close();

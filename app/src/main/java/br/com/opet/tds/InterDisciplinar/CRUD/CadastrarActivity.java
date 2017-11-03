@@ -30,11 +30,22 @@ public class CadastrarActivity extends Activity {
                 BancoController crud = new BancoController(getBaseContext());
                 EditText problema  = (EditText)findViewById(R.id.editText);
                 EditText sala = (EditText)findViewById((R.id.editText2));
+                EditText bloco = (EditText) findViewById ((R.id.editText3));
+                EditText data1 = (EditText) findViewById ((R.id.editText4));
+                EditText data2 = (EditText) findViewById ((R.id.editText5));
+                EditText setor = (EditText) findViewById ((R.id.editText6));
+                EditText usuario = (EditText) findViewById ((R.id.editText7));
+
                 String problemaString = problema.getText().toString();
                 int salaInt = Integer.parseInt(sala.getText().toString());
+                String blocoString = bloco.getText().toString();
+                String data1String = data1.getText().toString();
+                String data2String = data2.getText().toString();
+                String setorString = setor.getText().toString();
+                String usuarioString = usuario.getText().toString();
                 String resultado;
 
-                Problema problemas = new Problema(problemaString,salaInt);
+                Problema problemas = new Problema(problemaString,salaInt,blocoString,data1String,data2String,setorString,usuarioString);
                     resultado = crud.insereDado(problemas);
 
                 Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
