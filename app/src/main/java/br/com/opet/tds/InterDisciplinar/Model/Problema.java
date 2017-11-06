@@ -4,8 +4,6 @@ package br.com.opet.tds.InterDisciplinar.Model;
  * Created by rhayf on 24/05/2017.
  */
 
-
-
 public class Problema {
     private int _ID;
     private String problema;
@@ -22,13 +20,14 @@ public class Problema {
 
     public Problema(String problemaString, int salaInt, String blocoString, String data1String, String data2String, String setorString, String usuarioString) {
 
-        this.problema = problema;
-        this.sala = sala;
-        this.bloco = bloco;
-        this.data1 = data1;
-        this.data2 = data2;
-        this.setor = setor;
-        this.usuario = usuario;
+        this.problema = problemaString;
+        this.sala = salaInt;
+        this.bloco = blocoString;
+        this.data1 = data1String;
+        this.data2 = data2String;
+        this.setor = setorString;
+        this.usuario = usuarioString;
+
     }
 
 
