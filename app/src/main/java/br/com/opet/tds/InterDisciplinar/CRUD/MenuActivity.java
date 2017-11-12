@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import br.com.opet.tds.InterDisciplinar.GoogleMaps.MapsActivity;
 import br.com.opet.tds.InterDisciplinar.Others.ListClubeActivity;
 import br.com.opet.tds.InterDisciplinar.R;
 
@@ -58,6 +59,11 @@ public class MenuActivity extends Activity {
     }
     public void listar2(View v) {
         Intent intent = new Intent(MenuActivity.this, ConsultaActivity.class);
+        startActivity(intent);
+    }
+
+    public void mapa(View v) {
+        Intent intent = new Intent(MenuActivity.this, MapsActivity.class);
         startActivity(intent);
     }
 
