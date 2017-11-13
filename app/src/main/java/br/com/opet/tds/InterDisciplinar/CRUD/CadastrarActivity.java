@@ -55,7 +55,11 @@ public class CadastrarActivity extends Activity {
                 Intent intent = new Intent(CadastrarActivity.this,ConsultaActivity.class);
                 startActivity(intent);
                 finish();
+
+
             }
         });
+
+
     }
 }

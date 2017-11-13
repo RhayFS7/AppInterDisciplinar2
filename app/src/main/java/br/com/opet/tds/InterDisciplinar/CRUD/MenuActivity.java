@@ -22,7 +22,7 @@ public class MenuActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-      //  usuarioFirebase = ConfigFireBase.getFirebaseAutenticaçao();
+       // usuarioFirebase = ConfigFireBase.getFirebaseAutenticaçao();
     }
 
    /* @Override
@@ -68,13 +68,13 @@ public class MenuActivity extends Activity {
     }
 
 
-
-    /*private void deslogarUsuario() {
+/*
+    private void deslogar(View v) {
         usuarioFirebase.signOut();
         Intent intent = new Intent(MenuActivity.this, TelaPrincipalActivity.class);
         startActivity(intent);
         finish();
     }
-    */
+*/
 
 }
