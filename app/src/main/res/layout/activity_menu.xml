@@ -99,6 +99,15 @@
         android:layout_marginBottom="46dp"
         android:src="@drawable/logosmi" />
 
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:background="@android:drawable/ic_menu_info_details"
+        android:onClick="helper" />
 
 
 </RelativeLayout>

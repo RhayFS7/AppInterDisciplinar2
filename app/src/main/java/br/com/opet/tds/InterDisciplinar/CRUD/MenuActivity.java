@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import br.com.opet.tds.InterDisciplinar.API.HelperLinkActivity;
 import br.com.opet.tds.InterDisciplinar.GoogleMaps.MapsActivity;
 import br.com.opet.tds.InterDisciplinar.Others.ListClubeActivity;
 import br.com.opet.tds.InterDisciplinar.R;
@@ -64,6 +65,11 @@ public class MenuActivity extends Activity {
 
     public void mapa(View v) {
         Intent intent = new Intent(MenuActivity.this, MapsActivity.class);
+        startActivity(intent);
+    }
+
+    public void helper(View v) {
+        Intent intent = new Intent(MenuActivity.this, HelperLinkActivity.class);
         startActivity(intent);
     }
 

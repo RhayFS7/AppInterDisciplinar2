@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c1c5cc"
+    tools:context="br.com.opet.tds.InterDisciplinar.API.HelperLinkActivity"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_weight="1"
+        android:text="Aplicativo feito por Gustavo e Rhay.
+
+
+Versão: 1.0.2
+
+
+Contatos: rhayfs7@gmail.com
+gustavo.silva@opet.edu.br
+
+Faça Download do projeto ->"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btn_clickme"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Download"
+        android:textStyle="bold|italic" />
+
+
+</LinearLayout>
