@@ -16,17 +16,17 @@ import br.com.opet.tds.InterDisciplinar.R;
 
 public class MenuActivity extends Activity {
 
-   // private FirebaseAuth usuarioFirebase;
+  // private FirebaseAuth usuarioFirebase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
-
-       // usuarioFirebase = ConfigFireBase.getFirebaseAutenticaçao();
+        setContentView(R.layout.activity_menu);}
+/*
+       usuarioFirebase = ConfigFireBase.getFirebaseAutenticaçao();
     }
 
-   /* @Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.menu_activity, menu);
@@ -75,12 +75,12 @@ public class MenuActivity extends Activity {
 
 
 /*
-    private void deslogar(View v) {
+    private void deslogarUsuario() {
         usuarioFirebase.signOut();
         Intent intent = new Intent(MenuActivity.this, TelaPrincipalActivity.class);
         startActivity(intent);
         finish();
     }
-*/
 
+*/
 }
